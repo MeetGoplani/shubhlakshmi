@@ -1,4 +1,5 @@
 import React from 'react';
+import '/Users/meetgoplani/Documents/sharppp/src/components/css/text-video.css';
 
 const HeroSection = () => {
   return (
@@ -32,118 +33,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <style jsx>{`
-        .hero-container {
-          width: 100%;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 6rem 2rem;
-          min-height: 80vh;
-          display: flex;
-          align-items: center;
-        }
-        
-        .hero-content {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-        }
-        
-        .hero-text {
-          flex: 1;
-          padding-right: 2rem;
-        }
-        
-        .hero-title {
-          font-size: 5rem;
-          font-weight: 800;
-          line-height: 1.1;
-          margin-bottom: 2rem;
-        }
-        
-        .title-black {
-          color: #000;
-          display: block;
-        }
-        
-        .title-blue {
-          color: #4d8bdb;
-          display: block;
-        }
-        
-        .hero-subtitle {
-          font-size: 1.5rem;
-          color: #333;
-          margin-top: 2rem;
-        }
-        
-        .hero-image-container {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-        }
-        
-        .video-container {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          max-width: 600px;
-          margin: 0 auto;
-        }
-        
-        .hero-video {
-          width: 100%;
-          height: auto;
-          object-fit: contain;
-        }
-        
-        /* Responsive styles */
-        @media (max-width: 900px) {
-          .hero-content {
-            flex-direction: column;
-          }
-          
-          .hero-text {
-            padding-right: 0;
-            margin-bottom: 3rem;
-            text-align: center;
-          }
-          
-          .hero-title {
-            font-size: 3.5rem;
-          }
-
-          .video-container {
-            max-width: 450px;
-            width: 90%;
-          }
-        }
-        
-        @media (max-width: 600px) {
-          .hero-title {
-            font-size: 2.5rem;
-          }
-          
-          .hero-subtitle {
-            font-size: 1.2rem;
-          }
-
-          .video-container {
-            max-width: 300px;
-            width: 85%;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .video-container {
-            max-width: 250px;
-            width: 80%;
-          }
-        }
-      `}</style>
+      
     </div>
   );
 };

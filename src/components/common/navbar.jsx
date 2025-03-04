@@ -24,7 +24,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Hamburger menu icon for mobile */}
+        {/* mobile */}
         <div className="hamburger-menu" onClick={toggleMenu}>
           <span></span>
           <span></span>
@@ -55,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Desktop "PITCH TO US" button - only visible on desktop */}
+        
         <div className="navbar-right desktop-only">
           <button className="pitch-button" onClick={handlePitchClick}>
             PITCH TO US <span className="arrow-icon">↗</span>
