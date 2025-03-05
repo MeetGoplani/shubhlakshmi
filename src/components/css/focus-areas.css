@@ -1,0 +1,41 @@
+.focus-areas-grid {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.focus-area-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.focus-area-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms;
+}
+
+.focus-area-item:hover .focus-area-image {
+  transform: scale(1.1);
+}
+
+.focus-area-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.focus-area-title {
+  color: white;
+  font-size: 1.875rem;
+  font-weight: 700;
+}

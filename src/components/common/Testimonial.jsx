@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import "../css/testimonial.css";
 
 const testimonials = [
   {
@@ -47,39 +48,38 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials-section">
-      <div className="container mx-auto max-w-[1400px] px-16 py-24">
-        <h2 className="text-5xl font-bold text-black mb-16">Testimonials</h2>
+      <div className="testimonials-container">
+        <h2 className="testimonials-header">Testimonials</h2>
         
-        <div className="flex flex-col md:flex-row gap-16 items-start">
-          <div className="w-full md:w-1/2 space-y-8">
-            <blockquote className="text-xl text-black leading-relaxed">
+        <div className="testimonials-content">
+          <div className="testimonials-text">
+            <blockquote className="testimonial-quote">
               "{currentTestimonial.quote}"
             </blockquote>
             
-            <div className="space-y-2">
-              <p className="font-semibold text-xl text-black">{currentTestimonial.name}</p>
-              <p className="text-gray-600">{currentTestimonial.title}</p>
+            <div>
+              <p className="testimonial-author">{currentTestimonial.name}</p>
+              <p className="testimonial-title">{currentTestimonial.title}</p>
             </div>
             
-            <div className="h-16 w-32">
+            <div className="company-logo">
               <img 
                 src={currentTestimonial.logo} 
                 alt={`${currentTestimonial.company} logo`} 
-                className="h-full object-contain"
               />
             </div>
             
-            <div className="flex space-x-4">
+            <div className="navigation-buttons">
               <button 
                 onClick={goToPrevious}
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
+                className="nav-button"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft size={24} />
               </button>
               <button 
                 onClick={goToNext}
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
+                className="nav-button"
                 aria-label="Next testimonial"
               >
                 <ChevronRight size={24} />
@@ -87,28 +87,14 @@ const Testimonials = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 h-[500px] rounded-lg overflow-hidden">
+          <div className="testimonial-image">
             <img 
               src={currentTestimonial.image} 
               alt={currentTestimonial.name} 
-              className="w-full h-full object-cover"
             />
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .testimonials-section {
-          background-color: white;
-          width: 100%;
-        }
-        @media (max-width: 768px) {
-          .container {
-            padding-left: 2rem;
-            padding-right: 2rem;
-          }
-        }
-      `}</style>
     </section>
   );
 };

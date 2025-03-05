@@ -2,12 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './index.css'
 import Navbar from './components/common/navbar'
 import HeroSection from './components/common/text-video'
 import LogoCarousel from './components/common/LogoCarousel'
 import SharpVenturesComplete from './components/common/multiple-photo-layout'
   
 import Testimonials from './components/common/Testimonial'
+import AviralProfile from './components/common/columns'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,8 +29,9 @@ function App() {
         </div>
       </section>
       <SharpVenturesComplete />
-      <h1>xnjdkfngdjngd</h1>
       <Testimonials  />
+      <AviralProfile />
+      
     </div>
   )
 }
