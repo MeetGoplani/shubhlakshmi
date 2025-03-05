@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '/Users/meetgoplani/Documents/sharppp/src/components/css/LogoCarousel.css';
+import "../css/LogoCarousel.css";
 
 const LogoCarousel = () => {
   // Reference to the container element for the animation
