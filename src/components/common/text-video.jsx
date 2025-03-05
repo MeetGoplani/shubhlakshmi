@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/meetgoplani/Documents/sharppp/src/components/css/text-video.css';
+import "../css/text-video.css";
 
 const HeroSection = () => {
   return (
