@@ -9,7 +9,7 @@ const LogoCarousel = () => {
   const logos = [
     { 
       id: 1, 
-      src: '/super-bottoms-logo.png', 
+      src: '../Users/meetgoplani/Documents/sharppp/src/assets/columns.jpg', 
       alt: 'Super Bottoms', 
       link: 'https://superbottoms.com' 
     },

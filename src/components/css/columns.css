@@ -1,89 +1,326 @@
-.profile-container {
-  max-width: 72rem;
+.container {
+  max-width: 80rem;
   margin: 0 auto;
   padding: 1rem;
-  background-color: white;
 }
 
-.profile-grid {
-  position: relative;
+.main-grid {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .profile-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.networks-section {
+  background-color: #FEF2F2;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
 }
 
-.column {
-  padding: 1rem;
-  border-radius: 0.5rem;
+.networks-content {
+  text-align: center;
+}
+
+.networks-title {
+  color: #F87171;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.networks-subtitle {
+  color: #4B5563;
+  margin-bottom: 2rem;
+}
+
+.networks-stats {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.column-networks {
-  background-color: rgb(253 242 248);
-}
-
-.column-profile {
-  background-color: rgb(239 246 255);
-}
-
-.column-distribution {
-  background-color: rgb(219 234 254);
-}
-
-.column-investing {
-  background-color: rgb(254 252 232);
-}
-
-.stats-container {
-  text-align: center;
-  margin-top: 1rem;
+  gap: 3rem;
 }
 
 .stat-item {
-  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .stat-number {
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   font-weight: 700;
-  color: rgb(31 41 55);
+  margin-bottom: 0.5rem;
 }
 
-.stat-label {
-  color: rgb(75 85 99);
+.stat-text {
+  color: #4B5563;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Update profile section styles */
+.profile-section {
+  background-color: #EFF6FF;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.profile-content {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.profile-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: -2rem 0 0 -3rem;
+  flex-shrink: 0;
+}
+
+/* Update media queries */
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-content {
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    margin: -1.5rem 0 0 -1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-info {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section {
+    padding: 1.5rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    margin: -1rem 0 0 -1rem;
+  }
+
+  .social-link {
+    padding: 0.375rem;
+  }
+
+  .metric-item {
+    font-size: 0.875rem;
+  }
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.social-link:hover {
+  opacity: 0.9;
+}
+
+.linkedin {
+  background-color: #0077B5;
+}
+
+.twitter {
+  background-color: black;
+}
+
+.quora {
+  background-color: #E0245E;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.metric-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.distribution-section,
+.investing-section {
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.distribution-section {
+  background-color: #DBEAFE;
+}
+
+.investing-section {
+  background-color: #FEF3C7;
+}
+
+.distribution-title {
+  color: #3B82F6;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.investing-title {
+  color: #F59E0B;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.distribution-subtitle,
+.investing-subtitle {
+  color: #4B5563;
   margin-bottom: 1rem;
 }
 
-.profile-image {
-  width: 16rem;
-  height: 16rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
+.distribution-number,
+.investing-number {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.institute-logos {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  display: flex;
-  gap: 0.5rem;
+.distribution-text,
+.investing-text {
+  color: #4B5563;
 }
 
-.institute-logo {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 9999px;
+/* Add these responsive styles at the end of the file */
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    margin: -1.5rem auto 1.5rem;
+  }
+
+  .profile-section {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .networks-stats {
+    gap: 2rem;
+  }
+
+  .social-links {
+    margin-bottom: 1.5rem;
+  }
+
+  .metrics {
+    gap: 0.75rem;
+  }
+
+  .distribution-section,
+  .investing-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .distribution-number,
+  .investing-number {
+    font-size: 1.75rem;
+  }
+
+  .social-link {
+    padding: 0.375rem;
+  }
+
+  .metric-item {
+    font-size: 1rem;
+  }
+}
+
+/* Add this to ensure proper sizing on larger screens */
+@media (min-width: 1280px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+
+  .profile-section {
+    min-height: 450px;
+  }
+
+  .profile-image {
+    width: 450px;
+    height: 450px;
+  }
 }
