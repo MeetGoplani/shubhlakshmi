@@ -6,8 +6,7 @@ import Navbar from './components/common/navbar'
 import HeroSection from './components/common/text-video'
 import LogoCarousel from './components/common/LogoCarousel'
 import SharpVenturesComplete from './components/common/multiple-photo-layout'
-import Testimonial from './components/common/Testimonial'
-import TestimonialCarousel from './components/common/Testimonial'
+  
 import Testimonials from './components/common/Testimonial'
 
 function App() {

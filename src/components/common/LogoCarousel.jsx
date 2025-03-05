@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import '/Users/meetgoplani/Documents/sharppp/src/components/css/LogoCarousel.css';
 
 const LogoCarousel = () => {
   // Reference to the container element for the animation
@@ -99,103 +100,7 @@ const LogoCarousel = () => {
         </div>
       </div>
       
-      <style jsx>{`
-        .logo-carousel-section {
-          width: 100%;
-          padding: 2rem 0;
-          background-color: #fff;
-          overflow: hidden;
-        }
-        
-        .logo-carousel-container {
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-          overflow-x: hidden;
-          position: relative;
-        }
-        
-        .logo-track {
-          display: flex;
-          align-items: center;
-          gap: 4rem;
-        }
-        
-        .logo-item {
-          flex-shrink: 0;
-          width: 150px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: transform 0.3s ease;
-        }
-        
-        .logo-item:hover {
-          transform: scale(1.05);
-        }
-        
-        .logo-item img {
-          max-width: 100%;
-          height: auto;
-          max-height: 60px;
-          object-fit: contain;
-        }
-        
-        @media (max-width: 1024px) {
-          .logo-carousel-container {
-            width: 95%;
-            max-width: 1000px;
-          }
-          .logo-track {
-            gap: 3rem;
-          }
-          
-          .logo-item {
-            width: 120px;
-          }
-          
-          .logo-item img {
-            max-height: 50px;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .logo-carousel-container {
-            width: 80%;
-            max-width: 700px;
-          }
-          .logo-track {
-            gap: 2rem;
-          }
-
-          .logo-item {
-            width: 100px;
-          }
-          
-          .logo-item img {
-            max-height: 40px;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .logo-carousel-container {
-            width: 75%;
-            max-width: 500px;
-            margin-auto;
-          }
-          .logo-track {
-            gap: 1.5rem;
-          }
-
-          .logo-item {
-            width: 80px;
-          }
-          
-          .logo-item img {
-            max-height: 30px;
-          }
-        }
-      `}</style>
+      
     </div>
   );
 };
